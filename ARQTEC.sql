@@ -9,4 +9,8 @@ email VARCHAR(255) UNIQUE NOT NULL,
 idade INT,
 perfilfoto VARCHAR(255)
 );
+
+CREATE TABLE imagens(
+exportarfoto VARCHAR(255)
+)
    
