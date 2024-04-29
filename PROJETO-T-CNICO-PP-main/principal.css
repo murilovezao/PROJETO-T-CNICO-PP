@@ -1,0 +1,76 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.Titulo {
+    color: rgb(58, 58, 157);
+    font-style:italic;
+}
+
+.introduçao {
+    font-style: oblique;
+    }
+
+#arqfoto {
+    border: 10px solid #3e3e3e;
+    margin-top: 6vh;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #logo{ 
+	position:fixed; 
+	top:0; 
+	left:0; 
+  margin-top: 0vh;
+}
+
+.Teste {
+  color: rgb(58, 58, 157);
+  font-style:italic;
+  margin-left: 15vh;
+}
+
+.teste2 {
+  font-style: oblique;
+  margin-left: 11vh;
+  }
+
+
+#icones{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+  margin-top: 3vh;
+}
+
+footer {
+	background-color: white;
+	color: rgb(58, 58, 157);
+	padding: 20px;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+a {
+	color: rgb(58, 58, 157);
+	text-decoration: none;
+}
