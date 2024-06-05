@@ -1,27 +1,67 @@
-var canvas = document.getElementById("myCanvas");
-var context = canvas.getContext("2d");
-var imageObj = new Image();
+function adicionarComentario() {
+    // Cria o elemento do card de comentário
+    var commentCard = document.createElement('div');
+    commentCard.className = 'comment-card';
+    commentCard.innerHTML = `
+        <span class="close-btn" onclick="fecharComentario(this.parentNode)">X</span>
+        <textarea rows="4" cols="50" placeholder="Digite seu comentário aqui..."></textarea>
+    `;
 
-imageObj.onload = function()
-{
-    context.drawImage(imageObj, 0, 0);
-}  
+    // Adiciona o card de comentário ao body do documento
+    document.body.appendChild(commentCard);
+}
 
-imageObj.src = "arqteste.avif"; 
+function fecharComentario(commentCard) {
+    // Remove o card de comentário
+    commentCard.remove();
+}
 
-var myForm = document.getElementById('myForm');
-myForm.addEventListener('submit', function(e)
-{
-    var text = document.getElementById('myText').value;
+function adicionarComentario() {
+    // Cria o elemento do card de comentário
+    var commentCard = document.createElement('div');
+    commentCard.className = 'comment-card';
+    commentCard.innerHTML = `
+        <span class="close-btn" onclick="fecharComentario(this.parentNode)">X</span>
+        <textarea rows="4" cols="50" placeholder="Digite seu comentário aqui..."></textarea>
+    `;
 
-    if(text.lenght == 0)
-    {
-         alert("you forgot to put something");
-    }
+    // Adiciona o card de comentário ao body do documento
+    document.body.appendChild(commentCard);
+}
 
-    context.font = "40pt Calibri";
-    context.fillText(text, 50, 50);
-    
-    e.preventDefault();
-});
+function fecharComentario(commentCard) {
+    // Remove o card de comentário
+    commentCard.remove();
+}
 
+
+
+function ativarDesenho(event) {
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    var corCaneta = document.getElementById('corCaneta').value; // Obtém a cor selecionada
+
+    var desenhoAtivo = false;
+
+    canvas.addEventListener('mousedown', function(event) {
+        desenhoAtivo = true;
+        context.beginPath();
+        context.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+        context.strokeStyle = corCaneta; // Define a cor da caneta
+    });
+
+    canvas.addEventListener('mousemove', function(event) {
+        if (desenhoAtivo) {
+            context.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+            context.stroke();
+        }
+    });
+
+    canvas.addEventListener('mouseup', function() {
+        desenhoAtivo = false;
+    });
+
+    canvas.addEventListener('mouseleave', function() {
+        desenhoAtivo = false;
+    });
+}
