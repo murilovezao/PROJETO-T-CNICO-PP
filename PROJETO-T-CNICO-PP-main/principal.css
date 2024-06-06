@@ -89,7 +89,7 @@ body {
   background-blend-mode: color;
 }
 .card {
-  width: 620px;
+  width: 400px;
   height: 80%;
   background-color: #fff;
   border-radius: 8px;
@@ -111,9 +111,9 @@ body {
 }  */
 
 .imgbody{
-  width: 429px;
+  width: 39px;
   border-radius: 2%;
-  margin-bottom: 47px;
+  margin-bottom:250px;
 }
 
 .card-header {
@@ -122,11 +122,11 @@ body {
   padding: 0px;
   text-align: center;
   width: 620px;
-  margin-top: 19%;
+  margin-top: 49%;
   border-radius: 5%;
 }
 .card-body {
-  padding: 155px;
+  padding: 100px;
   gap: 10vh;
 }
 .card-body p {
@@ -141,9 +141,10 @@ body {
 }
 
 .project-image {
-  width: 121%;
+  width: 31%;
   height: 37px;
   justify-content: center;
   margin-left: 10%;
+  margin-bottom: 450%
   cursor: pointer; /* Adiciona cursor de ponteiro para indicar clicabilidade */
 }
