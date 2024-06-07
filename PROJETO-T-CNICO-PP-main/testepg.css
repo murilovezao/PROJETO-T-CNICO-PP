@@ -11,7 +11,7 @@ body {
 
 .card {
     width: 300px;
-    padding: 20px;
+    padding: 40px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,12 +55,12 @@ body {
 }
 
 #comment-input {
-    width: 200px;
+    width: 250px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
-    height: 100px; /* Defina a altura desejada */
+    height: 130px; 
 }
 
 #comment-submit {
@@ -77,7 +77,7 @@ body {
 /* caneta a seguir */
 
 .card {
-    width: 300px;
+    width: 400px;
     height:60%;
     padding: 20px;
     background-color: #fff;
@@ -107,7 +107,7 @@ body {
 }
 
 .buttons button img {
-    width: 40px;
+    width: 48px;
     height: 40px;
     border-radius: 20%;
 }
@@ -136,3 +136,5 @@ canvas {
 .container {
     position: relative;
 }
+
+
