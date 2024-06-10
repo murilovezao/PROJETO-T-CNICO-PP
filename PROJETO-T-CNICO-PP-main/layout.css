@@ -1,0 +1,22 @@
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.file-upload {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.image-container {
+    margin-top: 40px; /* Para dar espaço para o botão de upload */
+}
+
+.image-container img {
+    width: 40%;
+    display: block;
+    margin-bottom: 10px;
+}
