@@ -95,3 +95,13 @@ window.addEventListener('resize', function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const imageData = urlParams.get('image');
+    
+    if (imageData) {
+        document.querySelector('.image').setAttribute('src', decodeURIComponent(imageData));
+    }
+});
